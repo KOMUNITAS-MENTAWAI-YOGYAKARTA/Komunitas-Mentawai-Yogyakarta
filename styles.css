@@ -1,0 +1,18 @@
+:root{--bg-start:#001a3d;--bg-end:#00264d;--text:#0a1f44;--card-bg:rgba(255,255,255,0.9);--primary:#0d47a1;--primary-hover:#093a85;--ring:#82b1ff}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:"Merriweather",serif;background:linear-gradient(135deg,var(--bg-start),var(--bg-end));color:#fff;display:grid;grid-template-rows:auto 1fr}
+.hero{text-align:center;color:#fff;padding:24px;background:linear-gradient(90deg,#001533,#002246);box-shadow:0 4px 12px rgba(0,0,0,.35)}
+.hero h1{margin:0;font-weight:700;letter-spacing:.4px}
+.subtitle{margin-top:12px;opacity:.9}
+.brand{display:flex;align-items:center;justify-content:center;gap:14px}
+.logo{width:56px;height:56px;border-radius:50%;background:radial-gradient( circle at 30% 30%, #fff 0%, #e3f2fd 28%, rgba(255,255,255,0) 30%), linear-gradient(135deg,#0d47a1,#1976d2);box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.brand-text{display:flex;flex-direction:column;align-items:flex-start}
+main{display:grid;place-items:center;padding:24px}
+.card{width:100%;max-width:960px;background:var(--card-bg);backdrop-filter:blur(6px);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+a.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border-radius:12px;text-decoration:none;font-weight:600;color:#fff;background:var(--primary);box-shadow:0 6px 16px rgba(13,71,161,.35);transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+a.cta:hover{background:var(--primary-hover);transform:translateY(-1px);box-shadow:0 12px 20px rgba(13,71,161,.35)}
+a.cta:focus-visible{outline:none;box-shadow:0 0 0 3px var(--ring)}
+a.cta.disabled{background:#9fb6e0;color:#e6eefc;pointer-events:none}
+.cta .icon{width:20px;height:20px;display:inline-block}
